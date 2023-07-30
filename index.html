@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a0a056be11.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="css/magnific-popup.css">
+      <link rel="stylesheet" href="https://use.typekit.net/ldj8uhs.css">
+      <link rel="stylesheet" type="text/css" href="css/slide-main.css">
+      <link rel="stylesheet" href="css/slide.css">
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+<body onload="myfuntion()">
+  <div id="loader"></div>
+  <form id="test-form" class="mfp-hide white-popup-block" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+
+    <fieldset style="border:0;">
+      <section class="continer">
+        <h1>Ragistration</h1>
+        <form action="#" class="form">
+          <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="Enter full name" required />
+          </div>
+          <div class="input-box">
+            <label>Email Address</label>
+            <input type="email" id="e-adress" placeholder="Enter email address" required />
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input type="text" id="phone" placeholder="Enter phone number" required />
+            </div>
+            <div class="input-box">
+              <label>Birth Date</label>
+              <input type="date" id="dob" placeholder="Enter birth date" required />
+            </div>
+          </div>
+          <div class="gender-box">
+            <h3>Gender</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio"  id="check-male" name="gender" checked />
+                <label for="check-male">male</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-female" name="gender" />
+                <label for="check-female">Female</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-other" name="gender" />
+                <label for="check-other">prefer not to say</label>
+              </div>
+            </div>
+          </div>
+          <div class="input-box address">
+            <label>Address</label>
+            <input type="text" id="StA" placeholder="Enter street address" required />
+            <input type="text" id="StA2" placeholder="Enter street address line 2" required />
+            <div class="column">
+              <div class="select-box">
+                <select id="country">
+                  <option hidden>Country</option>
+                  <option>America</option>
+                  <option>Japan</option>
+                  <option>India</option>
+                  <option>Nepal</option>
+                </select>
+              </div>
+           
+            </div>
+            <div class="column">
+                <div class="column">
+                  <div class="select-box">
+                    <select id="religion">
+                      <option hidden>Religion</option>
+                      <option>Islam</option>
+                      <option>Hindunism</option>
+                      <option>Christiam</option>
+                      <option>Buddanism</option>
+                    </select>
+                  </div>
+                  
+                </div>
+              <input type="text" id="post" placeholder="Enter postal code" required />
+            </div>
+          </div>
+          <button id="submit">Submit</button>
+        </form>
+      </section>
+    </fieldset>
+  </form>
+
+
+  <section>
+        <header class="nav">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+            <ul>
+                <li><a href="#" style="color: #2de;">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+       
+            <a class="popup-with-form" href="#test-form">     <button class="button-popup"><i class="bi bi-box-arrow-in-right"></i></button></a> 
+        </div>
+  </header>
+  </section>
+   <section class="project">
+  
+
+      
+            <div class="slides" data-aos="zoom-in-down">
+              <div class="slide slide--current " >
+                <div class="slide__img-wrap">
+                  <img class="slide__img slide__img--1" src="img/s-1.jpg" alt="Some image">
+                  <img class="slide__img slide__img--2" src="img/s-2.jpg" alt="Some image">
+                  <div class="break"></div>
+                  <img class="slide__img slide__img--3" src="img/s-3.jpg" alt="Some image">
+                  <img class="slide__img slide__img--4" src="img/s-4.jpg" alt="Some image">
+                </div>
+                <h2 class="slide__title">
+                  <span class="slide__title-inner" data-splitting="">Artificial</span>
+                  <span class="slide__title-inner slide__title-inner--middle" data-splitting="">AI</span>
+                  <span class="slide__title-inner" data-splitting="">Intelligent</span>
+                </h2>
+              </div>
+              <div class="slide">
+                <div class="slide__img-wrap">
+                  <img class="slide__img slide__img--1" src="img/s-5.png" alt="Some image">
+                  <img class="slide__img slide__img--2" src="img/s-6.jpg" alt="Some image">
+                  <div class="break"></div>
+                  <img class="slide__img slide__img--3" src="img/s-7.jpg" alt="Some image">
+                  <img class="slide__img slide__img--4" src="img/s-8.jpg" alt="Some image">
+                </div>
+                <h2 class="slide__title">
+                  <span class="slide__title-inner" data-splitting="">Web</span>
+                  <span class="slide__title-inner slide__title-inner--middle" data-splitting="">fornt-end</span>
+                  <span class="slide__title-inner" data-splitting="">Design</span>
+                </h2>
+              </div>
+              <div class="slide">
+                <div class="slide__img-wrap">
+                  <img class="slide__img slide__img--1" src="img/s-9.jpg" alt="Some image">
+                  <img class="slide__img slide__img--2" src="img/s-10.jpg" alt="Some image">
+                  <div class="break"></div>
+                  <img class="slide__img slide__img--3" src="img/s-11.jpg" alt="Some image">
+                  <img class="slide__img slide__img--4" src="img/s-12.jpg" alt="Some image">
+                </div>
+                <h2 class="slide__title">
+                  <span class="slide__title-inner" data-splitting="">Web</span>
+                  <span class="slide__title-inner slide__title-inner--middle" data-splitting="">Back-end</span>
+                  <span class="slide__title-inner" data-splitting="">development</span>
+                </h2>
+              </div>
+          
+              <button class="slides__nav slides__nav--prev">
+                <svg><path d="M82 10H9" stroke="#fff" stroke-width="2"></path><path d="M10.474 0C7.988 4 4.118 7.422 0 10c4.156 2.539 7.865 6 10.474 10h2.485c-2.608-4-5.744-7.379-9.618-10C7.215 7.34 10.474 4 13 0h-2.526zm6 0C13.987 4 10.116 7.422 6 10c4.156 2.539 7.865 6 10.474 10h2.485c-2.606-4-5.745-7.379-9.617-10C13.214 7.34 16.474 4 19 0h-2.526z" fill="#fff"></path></svg>
+              </button>
+              <button class="slides__nav slides__nav--next">
+                <svg><path d="M0 10h73" stroke="#fff" stroke-width="2"></path><path d="M71.526 0C74.012 4 77.882 7.422 82 10c-4.156 2.539-7.865 6-10.474 10h-2.485c2.608-4 5.744-7.379 9.618-10C74.785 7.34 71.526 4 69 0h2.526zm-6 0C68.013 4 71.884 7.422 76 10c-4.156 2.539-7.865 6-10.474 10H63.04c2.606-4 5.745-7.379 9.617-10C68.786 7.34 65.526 4 63 0h2.526z" fill="#fff"></path></svg>
+              </button>
+            </div>
+          </main>
+          <svg class="cursor" width="60" height="60" viewBox="0 0 60 60">
+            <circle class="cursor__inner" cx="30" cy="30" r="15"></circle>
+          </svg>
+   </section>
+
+   <section class="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="2000">
+          <img src="img/5.jpg" class="img-fluid p-5" alt="">
+        </div>
+        <div class="col-md-6 intro p-5" data-aos="fade-down"  data-aos-delay="300" data-aos-duration="2000">
+            <h1 class="text">I am a <span class="first-text"></span></h1>
+            <p>Hey there! I'm Nick Roy, a passionate and creative web designer and developer. As a student of the ever-evolving digital world, I am deeply committed to crafting visually stunning and user-friendly websites that leave a lasting impact. </p>
+                  <a id="a" data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"  data-aos-delay="500" href="https://drive.google.com/drive/folders/10SyUECrbDZ4jmDVLmAulKb5g2a5DTwfk"><span>My CV</span></a>
+              </p>
+           <div class="social-link">
+           <a href="https://www.facebook.com/nickroyDotcom"><i class="fa-brands fa-facebook"></i></a>
+           <a href="https://github.com/Nickroy12"><i class="fa-brands fa-github"></i></a>
+           <a href="https://www.instagram.com/nickroyorginal"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://wa.me/qr/3MYYYCA7SDXDN1"><i class="fa-brands fa-whatsapp"></i></a>
+
+           </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+
+
+
+
+ 
+   <section class="card-section" data-aos="zoom-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="2000">
+            <div class="card " style="width: 18rem;">
+              <img src="https://computerstudypoint.com/wp-content/uploads/2022/01/pngegg-300x300.png" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="text-center">HTML5</h5>
+                <p>HTML stands for "HyperText Markup Language." It is the standard markup language used to create and structure the content of websites and webpages. HTML uses a system of tags and attributes to define the structure and layout of a webpage's content. These tags are interpreted by web browsers to display the content in a human-readable format. </p>
+                <a class="btn btn-primary stretched-link" href="https://www.w3schools.com/html/default.asp"> Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="2000">
+            <div class="card" style="width: 18rem;">
+              <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-css-logo-png-transparent-svg-vector-bie-supply-9.png" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="text-center">CSS3</h5>
+                <p class="p-2">CSS stands for Cascading Style Sheets. It is a programming language used in web development to control the presentation and layout of HTML documents. With CSS, you can define how HTML elements should appear on a webpage, including their color, size, font, spacing, and positioning. </p>
+                <a class="btn btn-primary stretched-link" href="https://www.w3schools.com/css/"> Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-down"  data-aos-delay="300" data-aos-duration="2000">
+            <div class="card" style="width: 18rem;">
+              <img src="https://www.freepnglogos.com/uploads/javascript/javascript-wysiwyg-editor-and-reusable-assets-coherent-editor-5.png" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="text-center">JS ES6</h5>
+                <p>JavaScript is a popular and versatile programming language used for web development. It is one of the core technologies of the World Wide Web, alongside HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets). JavaScript allows web developers to create interactive and dynamic elements on web pages, enhancing the user experience. </p>
+                <a class="btn btn-primary stretched-link" href="https://www.javascript.com/"> Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+   <section id="skills " class="bg-dark p-5 m-5">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" data-aos="zoom-in-down" data-aos-easing="ease-in-back" data-aos-delay="200"  data-aos-duration="700">
+          <h2 class="text-white text-center">My skills</h2>
+          <div class="progress-title">
+            <h3>HTML</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 95%; background: #ef2d56;"><div class="pro-value">95%</div></div>
+              
+            </div>
+
+          </div>
+          <div class="progress-title">
+            <h3>CSS 3</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%; background: #2defc5;"><div class="pro-value">80%</div></div>
+              
+            </div>
+
+          </div>
+          <div class="progress-title">
+            <h3>JS</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 65%; background: #bcbe10;"> <div class="pro-value">65%</div></div>
+             
+            </div>
+
+          </div>
+          <div class="progress-title">
+            <h3>bootstrap</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 85%; background: #2def4d;"><div class="pro-value">85%</div></div>
+              
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6"  data-aos="zoom-in-up" data-aos-easing="ease-in-back" data-aos-delay="200"  data-aos-duration="700">
+          <h2 class="text-white text-center">QNA</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-button" data-bs-target="#item1" data-bs-toggle="collapse">What is your qualification</h2>
+              <div class="accordion-collapse collapse" id="item1">
+                <div class="accordion-body">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur expedita odio, assumenda, error ipsum quo ipsam, necessitatibus mollitia reiciendis a nobis in molestias magnam itaque? Accusamus itaque quis delectus ad, rem quae necessitatibus? Tempore, officiis fuga amet culpa ratione deserunt a maxime exercitationem minus reprehenderit? Iure voluptas quae dignissimos, consequatur assumenda aut voluptatem sed est officia sapiente ex possimus modi cumque consectetur! Dolorum magnam modi ab amet quis, vero tempora quae facilis mollitia voluptatum illum neque debitis quaerat fuga, repudiandae quod voluptatem quos. Minima quasi eligendi quidem neque assumenda optio consequuntur quibusdam illo omnis. Dolores, eius quidem. Nam, eum at.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-button" data-bs-target="#item2" data-bs-toggle="collapse">Why you choose this Proffesion</h2>
+              <div class="accordion-collapse collapse" id="item2">
+                <div class="accordion-body">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur expedita odio, assumenda, error ipsum quo ipsam, necessitatibus mollitia reiciendis a nobis in molestias magnam itaque? Accusamus itaque quis delectus ad, rem quae necessitatibus? Tempore, officiis fuga amet culpa ratione deserunt a maxime exercitationem minus reprehenderit? Iure voluptas quae dignissimos, consequatur assumenda aut voluptatem sed est officia sapiente ex possimus modi cumque consectetur! Dolorum magnam modi ab amet quis, vero tempora quae facilis mollitia voluptatum illum neque debitis quaerat fuga, repudiandae quod voluptatem quos. Minima quasi eligendi quidem neque assumenda optio consequuntur quibusdam illo omnis. Dolores, eius quidem. Nam, eum at.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-button" data-bs-target="#item3" data-bs-toggle="collapse">What is your goal</h2>
+              <div class="accordion-collapse collapse" id="item3">
+                <div class="accordion-body">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur expedita odio, assumenda, error ipsum quo ipsam, necessitatibus mollitia reiciendis a nobis in molestias magnam itaque? Accusamus itaque quis delectus ad, rem quae necessitatibus? Tempore, officiis fuga amet culpa ratione deserunt a maxime exercitationem minus reprehenderit? Iure voluptas quae dignissimos, consequatur assumenda aut voluptatem sed est officia sapiente ex possimus modi cumque consectetur! Dolorum magnam modi ab amet quis, vero tempora quae facilis mollitia voluptatum illum neque debitis quaerat fuga, repudiandae quod voluptatem quos. Minima quasi eligendi quidem neque assumenda optio consequuntur quibusdam illo omnis. Dolores, eius quidem. Nam, eum at.</p>
+                </div>
+              </div>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+   </section>
+
+<div class="gallery bg-dark">
+  <h1 class="text-center text-warning">My Previous Work</h1>
+
+  <ul class="controls"  data-aos="zoom-in-up">
+      <li class="buttons active" data-filter="all">all</li>
+      <li class="buttons" data-filter="app">App</li>
+      <li class="buttons" data-filter="card">Card</li>
+      <li class="buttons" data-filter="web">Web</li>
+    
+  </ul>
+
+  <div class="image-container"  data-aos="fade-up" data-aos-duration="3000">
+
+      <a href="img/portfolio/3.png" class="image web">
+          <img src="img/portfolio/3.png" alt="">
+      </a>
+      <a href="img/portfolio/5.png" class="image  web">
+          <img src="img/portfolio/5.png" alt="">
+      </a>
+      <a href="img/portfolio/portfolio-7.jpg" class="image card">
+          <img src="img/portfolio/portfolio-7.jpg" alt="">
+      </a>
+
+      <a href="img/portfolio/1.png" class="image app">
+          <img src="img/portfolio/1.png" alt="">
+      </a>
+      <a href="img/portfolio/portfolio-8.jpg" class="image card">
+          <img src="img/portfolio/portfolio-8.jpg" alt="">
+      </a>
+      <a href="img/portfolio/2.png" class="image web">
+          <img src="img/portfolio/2.png" alt="">
+      </a>
+      <a href="img/portfolio/4.png" class="image app">
+          <img src="img/portfolio/4.png" alt="">
+      </a>
+      <a href="img/portfolio/6.png" class="image app">
+          <img src="img/portfolio/6.png" alt="">
+      </a>
+      <a href="img/portfolio/portfolio-9.jpg" class="image card">
+          <img src="img/portfolio/portfolio-9.jpg" alt="">
+      </a>
+
+      
+  </div>
+
+</div>
+<section class="countter "> 
+<div class="container  p-5" id="section_counter" data-aos="zoom-in-down">
+  <h2 class="text-warning text-center pb-5" > Full Summary</h2>
+
+  <div class="row stat">
+    <div class="col-md-3">
+      <div class="counter-item text-center">
+      
+          <i class="fa-solid fa-screwdriver-wrench icon"></i>
+
+        <h1 class="counter" data-target="1600">0 </h1>
+        <h2>project</h2>
+          
+      </div>
+ </div>
+    <div class="col-md-3">
+      <div class="counter-item text-center">
+        <i class="fa-regular fa-face-smile-beam icon"></i>
+        <h1 class="counter" data-target="600">0</h1>
+        <h2>Satisfied Client</h2>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="counter-item text-center">
+        <i class="fa-solid fa-users-viewfinder icon"></i>
+        <h1 class="counter" data-target="1000">0</h1>
+        <h2>Clinent</h2>
+      </div>
+    </div>
+    <div class="col-md-3 text-center">
+      <div class="counter-item ">
+        <i class="fa-solid fa-star icon"></i>
+        <h1 class="counter" data-target="600">0</h1>
+        <h2>5 star rating</h2>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="testmonial" data-aos="zoom-in-up">
+  <div class="container">
+    <h1 class="text-center">My Client Review</h1>
+      <h1 class="section-header">Client Review <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></h1>
+      <div class="testimonials">
+          
+          <div id="carouselExampleControls" class="carousel " data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="single-item">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="profile">
+                                <div class="img-area">
+                                    <img src="img/masud.png" alt="">
+                                </div>
+                                <div class="bio">
+                                    <h2>Masud Buiyan</h2>
+                                    <h4>Web Developer</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content">
+                                <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
+                                <p class="socials">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-behance"></i>
+                                    <i class="fa fa-pinterest"></i>
+                                    <i class="fa fa-dribbble"></i>
+                                    <i class="fa fa-vimeo"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="single-item">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="profile">
+                                <div class="img-area">
+                                    <img src="img/nilima.png" alt="">
+                                </div>
+                                <div class="bio">
+                                    <h2>Maria Akter Nilima</h2>
+                                    <h4>UI/UX Designer</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content">
+                                <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
+                                <p class="socials">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-behance"></i>
+                                    <i class="fa fa-pinterest"></i>
+                                    <i class="fa fa-dribbble"></i>
+                                    <i class="fa fa-vimeo"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="single-item">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="profile">
+                                <div class="img-area">
+                                    <img src="img/sawon.png" alt="">
+                                </div>
+                                <div class="bio">
+                                    <h2>Abdul Aziz Shawon</h2>
+                                    <h4>Graphic Designer</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content">
+                                <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
+                                <p class="socials">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-behance"></i>
+                                    <i class="fa fa-pinterest"></i>
+                                    <i class="fa fa-dribbble"></i>
+                                    <i class="fa fa-vimeo"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+      </div>
+  </div>
+</section>
+<section class="p-4">
+ <div class="container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14594.229522317766!2d90.40309515!3d23.869846199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1690544214151!5m2!1sen!2sbd" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+ </div>
+</section>
+<section class="brand ">
+  <div class="container">
+    <h2 class="text-center">Our <span>Client</span></h2>
+    <div class="img-slide">
+            <img src="img/b-1.png" alt="">
+      <img src="img/b-2.png" alt="">
+      <img src="img/b-3.png" alt="">
+      <img src="img/b-4.png" alt="">
+      <img src="img/b-5.png" alt="">
+      <img src="img/b-6.png" alt="">
+      <img src="img/b-7.png" alt="">
+      <img src="img/b-8.png" alt="">
+      <img src="img/b-9.png" alt="">
+    </div>
+
+</section>
+<footer class="fotter  text-center p-4" style="background-color:#000;">
+  <h5 style="font-family: sans-sharof,min;color: #fff6f6;">All Copyright reserved by Nick Leb@2023</h5>
+</footer>
+   <div class="cursor"></div>
+   <div class="cursor2"></div>  
+<div id="pop-form">
+  
+</div>
+    <div id="backtop">
+      
+    <button onclick="topScroll()"><i class="bi bi-chevron-double-up"></i></button>
+    </div> 
+  <div id="progresse">
+
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js/app.js"></script>
+ <!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.slim.min.js" integrity="sha512-5NqgLBAYtvRsyAzAvEBWhaW+NoB+vARl6QiA02AFMhCWvPpi7RWResDcTGYvQtzsHVCfiUhwvsijP+3ixUk1xw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- magnific popup js cdn link  -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- sweealert js -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/slide-demo.js"></script>>
+<script>
+$(document).ready(function(){
+
+  $('.buttons').click(function(){
+
+      $(this).addClass('active').siblings().removeClass('active');
+
+      var filter = $(this).attr('data-filter')
+
+      if(filter == 'all'){
+          $('.image').show(400);
+      }else{
+          $('.image').not('.'+filter).hide(200);
+          $('.image').filter('.'+filter).show(400);
+      }
+
+  });
+
+  $('.gallery').magnificPopup({
+
+      delegate:'a',
+      type:'image',
+      gallery:{
+          enabled:true
+      }
+
+  });
+ 
+
+});
+$(document).ready(function() {
+	$('.popup-with-form').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		// When elemened is focused, some mobile browsers in some cases zoom in
+		// It looks not nice, so we disable it:
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+});
+$("#submit").click(function(){
+  var name = $("#name").val();
+  var email = $("#e-adress").val();
+  var phone = $("#phone").val();
+  var dateOfBirth = $("#dob").val();
+  var gender = $("#check-male").val();
+  var street_1 = $("StA").val();
+  var street_2 = $("#StA2").val();
+  var country = $("#country").val();
+  var religion = $("#religion").val();
+  var post = $("#post").val();
+  if (name == "" || email ==""|| phone == ""|| dateOfBirth ==""||gender == ""|| street_1 ==""||street_2 ==""||country==""|| religion ==""||post ==""){
+    swal({
+  title: "Fields Empty!",
+  text: "Please check the missing field!",
+  icon: "warning",
+  button: "Ok",
+});
+  }else{
+    swal({
+  title: "Good job!",
+  text: "You clicked the button!",
+  icon: "success",
+  button: "Aww yiss!",
+});
+  }
+});
+
+</script>
+<script>document.documentElement.className = "js";
+
+  var supportsCssVars = function supportsCssVars() {
+    var e,
+      t = document.createElement("style");
+    return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+  };
+  
+  supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+</body>
+</html>
