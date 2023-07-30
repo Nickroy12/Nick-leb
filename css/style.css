@@ -86,8 +86,8 @@ header .nav ul li a:hover {
 	width: 105px;
 	height: 38px;
 	background: transparent;
-	border: 2px solid #fff;
-	color: white;
+	border: 2px solid #d53535;
+	color: #fd510c;
     transition: all 1.0s ease-in;
 	font-size: 1.1em;
 	outline: none;
@@ -95,7 +95,7 @@ header .nav ul li a:hover {
 	border-radius: 6px;
 }
 .button-popup:hover{
-    background: #fff;
+    background: #000;
     transform: scaleX(-10px);
     color: #0700dd;
 }
