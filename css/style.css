@@ -214,8 +214,8 @@ transition: color 0.5s;
 /* backtop */
 #backtop{
     position: fixed;
-    right: 10px;
-    bottom: 30px;
+    right: 32px;
+    bottom: 94px;
  
 }
 #backtop button{
