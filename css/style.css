@@ -628,8 +628,9 @@ bottom: 0;
         text-align: center;
     }
 }
-.fb_dialog_content iframe {
-	    background: none;
+#f2129904be03448 .container {
+	animation: 3s ease-out 0s 1 normal none running slideInFromBottomDelay;
+    background: none rgb(10, 124, 255);
     border-radius: 60px;
     bottom: 24px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px;
@@ -639,8 +640,8 @@ bottom: 0;
     overflow: visible;
     padding: 0px;
     position: fixed;
-    right: -6px;
-    bottom: 86px;
+    right: 12px;
+    bottom: 79px;
     width: 60px;
     z-index: 2147483644;
 }
