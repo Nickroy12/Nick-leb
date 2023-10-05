@@ -628,3 +628,19 @@ bottom: 0;
         text-align: center;
     }
 }
+.fb_dialog_content iframe {
+	    background: none;
+    border-radius: 60px;
+    bottom: 24px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px;
+    display: block;
+    height: 60px;
+    margin: 0px 12px;
+    overflow: visible;
+    padding: 0px;
+    position: fixed;
+    right: -6px;
+    bottom: 86px;
+    width: 60px;
+    z-index: 2147483644;
+}
